@@ -36,7 +36,7 @@ function NavbarArea() {
       className="md:py-2 py-1"
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
-        maxWidth="2xl"
+        maxWidth="xl"
       >
         <NavbarContent className="sm:hidden" justify="start">
           <NavbarMenuToggle

@@ -10,7 +10,7 @@ const Mood = () => {
   return (
     <section>
         <h3 className='text-[#26395C] text-center text-2xl md:text-4xl font-bold lg:text-[42px] pt-6'>What are you in the mood for?</h3>
-        <div className='grid grid-cols-1 p-5 container mx-auto sm:grid-cols-2 lg:grid-cols-4 mt-4 md:mt-6'>
+        <div className='grid grid-cols-1 sm:p-0 p-5 gap-0 container mx-auto sm:grid-cols-2 lg:grid-cols-4 mt-4 md:mt-6'>
           {
             cards.map((data,index) =>(
               <div key={index} className='flex flex-col items-center'>

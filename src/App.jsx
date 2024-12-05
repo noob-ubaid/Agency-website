@@ -1,6 +1,7 @@
 import NavbarArea from "./components/NavbarArea"
 import Hero from "./components/Hero"
 import Mood from "./components/Mood"
+import Things from "./components/Things"
 function App() {
   
   return (
@@ -8,6 +9,7 @@ function App() {
       <NavbarArea/>
       <Hero/>
       <Mood/>
+      <Things/>
     </>
   )
 }

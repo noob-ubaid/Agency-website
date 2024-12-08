@@ -16,8 +16,11 @@ import {
   DropdownItem,
   Button,
 } from "@nextui-org/react";
+const value = true;
 
 import { ChevronDownIcon, UserIcon } from "@heroicons/react/24/outline";
+import MyModal from "./Homepage/MyModal";
+import DropDown from "./Homepage/DropDown";
 
 function NavbarArea() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -92,19 +95,7 @@ function NavbarArea() {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Dropdown>
-              <DropdownTrigger>
-                <Button variant="none">
-                  {" "}
-                  <UserIcon className="text-gray-500 w-4 h-4" /> Account{" "}
-                </Button>
-              </DropdownTrigger>
-              <DropdownMenu aria-label="profile">
-                <DropdownItem key="new">My Profile</DropdownItem>
-                <DropdownItem key="copy">My History</DropdownItem>
-                <DropdownItem key="edit">Sign Out</DropdownItem>
-              </DropdownMenu>
-            </Dropdown>
+            {value === true ? <MyModal/> : <DropDown/>}
           </NavbarItem>
           <NavbarItem>
             <Button color="primary">Contact Now</Button>
